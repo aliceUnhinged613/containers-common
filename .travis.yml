@@ -5,7 +5,7 @@ go:
   - 1.15
 
 before_install:
-  - sudo apt-get -qq install libdevmapper-dev
+  - sudo apt-get -qq install libdevmapper-dev libseccomp2 libseccomp-dev
 
 script:
   - make build
